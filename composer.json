@@ -1,0 +1,26 @@
+{
+    "name": "craymend/tokeet-sdk",
+    "description": "Php SDK for Tokeet Client API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cray Mend",
+            "email": "craymend1@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Craymend\\TokeetSdk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Craymend\\TokeetSdk\\TokeetSdkServiceProvider"
+            ]
+        }
+    }
+}
