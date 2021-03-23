@@ -46,10 +46,9 @@ if($response->status === 'success'){
 ```
 
 ## Data Feed Booking Example
-[Laravel task scheduling](https://laravel.com/docs/5.5/scheduling) makes it easy to update cached data.
+```php
 use Craymend\TokeetSdk\DataFeed\Inquiries;
 
-```php
 $queryObj = new Inquiries();
 $response = $queryObj->getRentalBookings($rental->pkey, $startDate);
 
