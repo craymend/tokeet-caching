@@ -31,6 +31,7 @@ TOKEET_ACCOUNT=<your Tokeet Account ID>
 TOKEET_INQUIRY_DATA_FEED_BASE_URL=<your Tokeet data feed url>
 ```
 ## Rental API Usage Example
+```php
 use Craymend\TokeetSdk\Api\Rentals;
 
 $queryObj = new Rentals();
@@ -42,11 +43,13 @@ if($response->status === 'success'){
         echo "$rental->name \n";
     }
 }
+```
 
 ## Data Feed Booking Example
 [Laravel task scheduling](https://laravel.com/docs/5.5/scheduling) makes it easy to update cached data.
 use Craymend\TokeetSdk\DataFeed\Inquiries;
 
+```php
 $queryObj = new Inquiries();
 $response = $queryObj->getRentalBookings($rental->pkey, $startDate);
 
@@ -65,6 +68,7 @@ $response = $queryObj->getRentalBookings($rental->pkey, $startDate);
         echo "$bookingId - $name \n";
     }
  }
+ ```
 
 ## License
 
