@@ -24,6 +24,10 @@ Add the following to your composer.json
 composer update
 ```
 
+Run 
+
+    artisan vendor:publish
+
 Now in your .env file, define your Tokeet credentials:
 ```php
 TOKEET_API_KEY=<your Tokeet API key/email>
