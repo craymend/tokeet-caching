@@ -8,20 +8,8 @@ Query Tokeet API for Rentals and Tokeet Data Feeds for additional information in
 ## Installation
 
 Via composer.<br/>
-Add the following to your composer.json
 ```
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/craymend/tokeet-caching.git"
-    }
-],
-"require": {
-    "craymend/tokeet-caching": "dev-master"
-},
-```
-```
-composer update
+composer require craymend/accuratebackground-php
 ```
 
 Run 
