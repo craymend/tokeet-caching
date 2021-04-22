@@ -9,7 +9,7 @@ Query Tokeet API for Rentals and Tokeet Data Feeds for additional information in
 
 Via composer.<br/>
 ```
-composer require craymend/accuratebackground-php
+composer require craymend/tokeet-sdk
 ```
 
 Run 
