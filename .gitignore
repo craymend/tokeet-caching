@@ -1,0 +1,44 @@
+# Ignore Composer dependencies (they should be installed via composer install)
+vendor/
+
+# Ignore Composer lock file for libraries (recommended for packages, not apps)
+composer.lock
+
+# Ignore PHPUnit coverage and logs
+phpunit.xml
+phpunit.xml.dist
+coverage/
+.phpunit.result.cache
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary files
+*.log
+*.cache
+*.tmp
+*.swp
+
+# Ignore test artifacts
+/build/
+tests/_output/
+tests/_support/_generated/
+
+# Ignore dotenv files (if included for testing)
+.env
+.env.*
+
+# Ignore PHPStorm metadata
+/.phpstorm.meta.php/
+
+# Node artifacts (if using frontend assets)
+node_modules/
+npm-debug.log
+yarn-error.log
